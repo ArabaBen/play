@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+
+body, html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-image: url(UMA_PRINT_FADE96.png);
+	color: black;
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+}
+h1, h2, h4{
+	font-family: 'Bahianita', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 400;
+}
+h5, p{
+    font-family: "Peddana", serif;
+}
+h1{
+	font-size: 35px;
+	margin-bottom:14px;
+    letter-spacing: 4px;
+}
+h2{
+	font-size: 30px;
+	padding-left: 20px;
+}
+h3{
+    font-family: "Just Me Again Down Here", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+h4{
+    letter-spacing: 4px;
+    font-size: 25px;
+    font-weight: normal;
+}
+h5{
+ margin: 0;
+    padding-left: 14px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+header h1, h3{
+	margin-left: 20px;
+	}
+p {
+	color: black;
+}
+header{
+    background-color: #000;
+    color: #fff;
+}
+header a:hover, a:hover{
+    color: darkkhaki;
+}
+
+a{
+    color: #000;
+}
+.topheading1{
+    width: 100%; 
+    top: 0;
+    margin: 0; 
+}
+.topheading1 h1{
+    display: inline-block; 
+}
+
+.topheading1 a{
+    color: #fff;
+    padding: 12px 18px;
+    width: 10%;
+    float: right;
+    margin-top: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-family: 'Bahianita', cursive;
+    letter-spacing: 4px;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+    word-spacing: 2px;
+}
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000;
+  background-color: #fff;
+    margin-bottom: 20px;
+    
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-top: none;
+}
+
+
+
+
+
+
+
+/*modal-header
+.modal-header i{
+    font-size: 40px;
+    margin-top: 40px;
+    display: inline-block;
+} */
+
+#tabLeft, #tabRight{
+    font-size: 40px;
+}
+#tabLeft{
+    float: left;
+    padding-left: 15%;
+
+}
+#tabRight{
+    float: right;
+    padding-right: 15%;
+
+}
+.tabcontent h4{
+    display: inline-block;
+    text-align: center;
+    top: 0;
+    margin-top: 100px;
+    margin-left: 25%;
+    position: absolute;
+    text-transform: uppercase;
+
+}
+
+.modal-content{
+    width: 100%;
+}
+.tabcontent img{
+    float: left;
+    width: 40%;
+}
+.itm-content1{
+    width: 55%;
+    float: right;
+
+}
+
+.tabcontent h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+
+}
+.itm-content1 i, .fa{
+    font-size: 25px;
+    padding-top: 15px;
+    display: inline-block;
+
+}
+#calen{
+    display: inline-block;
+}
+
+.itm-content1 p{
+    display: inline-block;
+    padding-left: 35px;
+
+}
+.itm-content1 hr{
+        border: 1px solid black;
+
+}
+.modal-content-summary{
+    width: 100%;
+    float: left;
+}
+
+.modal-content-summary p{
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 22px;
+}
+
+
+
+
+/*bodtTest*/
+.bodyTest{
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.bodyTest h5{
+    text-transform: ;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+/*footer*/
+.footer{
+    width: 100%;
+    float: left;
+    background-color: #000;
+    color:#fff;
+    height: 75px;
+    display: inline-block;
+    margin: 0;
+}
+
+.footer p{
+    font-family: 'Bahianita', cursive; 
+    color: #fff; 
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-size: 18px;
+    text-align: center;
+    width: rest;
+    
+}
+.footer a{
+    float: right;
+    color: #fff;
+    top: 0;
+    width:5%;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
