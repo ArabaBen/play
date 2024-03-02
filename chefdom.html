@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border: 1px solid #fff;
+          border-top: none;
+        }
+
+        /* Navigation arrows */
+        .fa {
+          cursor: pointer;
+          padding: 14px 16px;
+          font-size: 24px;
+        }
+            .tabcontent img{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="topheading1">
+                <h1>: BNTUMA :</h1>            
+                    <a href="contact.html">CONTACT</a>
+                    <a href="play.html" style="border-bottom: 2px solid white; text-align: center;">PLAY</a>
+                    <a href="mywrk.html">WORK</a>
+                    <a href="home.html" style="text-align: center;">ABOUT</a>
+            </div>
+        </header>
+        <!--TAB HEADING-->
+        <div class="tab">
+            <i class="fa fa-angle-left" aria-hidden="true" onclick="navigateTabs(-1)" id="tabLeft"></i>
+            <i class="fa fa-angle-right" aria-hidden="true" onclick="navigateTabs(1)" id="tabRight"></i>
+        </div>
+        <!-- GUMMIE-->
+        <div id="flowerRun" class="tabcontent">
+            <h4>name of game: Flower RUN 2.0</h4>
+            <img src="flowerrun2.png" >
+            <div class="itm-content1">
+                <h5>flower run 2.0</h5>
+                    <i class="fa fa-calendar" aria-hidden="true" id="calen"><p> 2023</p> </i><hr>
+                    <i class="fa fa-tag" aria-hidden="true"><p> Game Design, Final Project</p></i><hr>
+                    <a href="https://arababen.github.io/umagame-flowerrun/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"><p>playtest version 2.0</p></i></a><hr>
+            </div>
+            <div class="modal-content-summary">
+                <p>My role for this particular project was as a designer and game developer. My game <strong>Flower Run </strong>is in it’s 2.0 version and it is a simple game that is reminiscent of the classic Mario Brothers game. The game's objective is to collect flowers and navigate through different obstacles and enemies like the red wasp to reach the goal of reaching the friendly queen bee. The game is designed with basic mechanics that are easy to understand, making it a stress free and a game for all ages. The levels become progressively more challenging as the player advances. For the 2.0 series, additional games of music/ noises were added and different weather backgrounds added a new layer of immersion, making the game more engaging and enjoyable to play.
+                </p>
+              </div>
+<!--            <div class="framing-for-FR2.0">--
+                <iframe src="https://arababen.github.io/FlowerRun2.0/" style=""></iframe>
+            </div>-->
+        </div>
+        
+        <!--chefdom-->
+        <div id="chefdom" class="tabcontent">
+            <h4>name of game: chefdom</h4>
+            <img src="chefdom.png">
+            <div class="itm-content1">
+                <h5>chefdom</h5>
+                    <i class="fa fa-calendar" aria-hidden="true" id="calen"><p> Spring 2023</p> </i><hr>
+                    <i class="fa fa-tag" aria-hidden="true"><p> Game Design, Final Project</p></i><hr>
+                    <a href="https://tabletopia.com/workshop/games/a-chef-s-taste" target="_blank"><i class="fa fa-external-link" aria-hidden="true"><p>playtest version 2.0</p></i></a><hr>
+            </div>
+            <div class="modal-content-summary">
+                <p>Chefdom is a new take on food related tabletop games. It is pysihycal board game with trivia food related trivia aspects to it. We choose the name chefdom because by definition chefdom is the state or process of being a chef. And like so, this game takes 2 or more players through the quest of knolwogwde that many chefs have. Its exicingt and fun and im happy to share it with you all. 
+
+                </p>
+            </div>
+            
+        </div>
+
+        
+        <!--resquest form  filll out ----> 
+        <div class="bodyTest"><hr style="border: 1px solid black;">
+            <h2>Digital Design Request</h2>
+            <h5>Please fill out <a href="https://forms.gle/uvK2bRoXB8223gq59">this form</a> or <a href="">contact us.</a></h5>
+        
+        </div>
+        
+<!--        clothes request for -- 
+        <div class="bodyTest"><hr style="border: 1px solid black;">
+            <h2>Custom Tailoring Request</h2>
+            <h5>Please fill out <a href="">this form</a> or <a href="https://forms.gle/XujraSELvVMkb4sd8">contact us.</a></h5>
+        
+        </div>-->
+        
+        <script>
+        let currentTab = 1; // Start with the first tab
+        const tabs = ["flowerRun", "chefdom"];
+
+        function showTab(index) {
+          // Hide all tab contents
+          document.querySelectorAll('.tabcontent').forEach(tab => {
+            tab.style.display = 'none';
+          });
+
+          // Show the current tab
+          document.getElementById(tabs[index]).style.display = 'block';
+        }
+
+        function navigateTabs(direction) {
+          currentTab += direction;
+          if (currentTab >= tabs.length) {
+            currentTab = 0; // Loop back to the first tab
+          } else if (currentTab < 0) {
+            currentTab = tabs.length - 1; // Loop to the last tab
+          }
+          showTab(currentTab);
+        }
+
+        // Initialize the first tab
+        document.addEventListener('DOMContentLoaded', () => showTab(currentTab));
+        </script>
+        <script src="play.js"></script>
+        
+    </body>
+</html>
